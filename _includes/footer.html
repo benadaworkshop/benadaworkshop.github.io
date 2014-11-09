@@ -1,0 +1,16 @@
+<footer>
+  <div class="grid-container">
+    <p><em>&copy; {{ 'now' | date: "%Y" }} {{site.title}}</em></p>
+  </div>
+</footer>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ResponsiveSlides.js/1.53/responsiveslides.min.js"></script>
+<script type="text/javascript">
+  (function($) {
+    $(function() {
+      var slider = $('.rslides');
+      if(slider)
+        slider.responsiveSlides();
+    });
+  })(jQuery);
+</script>

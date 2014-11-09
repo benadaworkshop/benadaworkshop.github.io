@@ -1,0 +1,127 @@
+@font-face {
+  font-family: "Alpha Wood";
+  src: url('/fonts/AlphaWood.ttf') format("truetype");
+}
+
+html {
+  background-color: #bfbfbf;
+  color: #262626;
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-size: 21px;
+}
+body {
+  margin: 0px;
+}
+h2 {
+  font-family: "Alpha Wood";
+  font-size: 75px;
+  color: #73371c;
+  text-shadow: 0px 0px 160px white;
+}
+header, footer {
+  color: white;
+  background-color: #5977b3;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+nav ul li {
+  float: left;
+  padding: 0px 5px;
+  line-height: 50px;
+  position: relative;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  float: left;
+  padding: 0px 10px;
+}
+nav li:hover > a, nav a:hover {
+  color: white;
+  background-color: #1a1a1a;
+}
+nav ul .dropdown-toggle {
+  padding-right: 25px;
+}
+nav ul .dropdown-toggle:after {
+  content: " ";
+  position: absolute;
+  top: 25px;
+  right: 10px;
+  width: 0px;
+  height: 0px;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+  border-top: 5px solid white;
+}
+nav .dropdown {
+  position: absolute;
+  top: 100%;
+  left: 5px;
+  min-width: 300px;
+  background-color: #5977b3;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 160px;
+  padding: 5px 0;
+  margin: 0 0 0 5px;
+  text-align: left;
+}
+nav .dropdown li, nav .dropdown li a {
+  padding: 0px;
+}
+nav .dropdown li a {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  white-space: nowrap;
+}
+nav li:hover .dropdown {
+  display: block;
+}
+.content {
+  background-color: white;
+}
+
+.product-image {}
+
+
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  margin-top: 25px;
+}
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+}
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+}
