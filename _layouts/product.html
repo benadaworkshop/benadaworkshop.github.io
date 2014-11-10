@@ -3,18 +3,21 @@ layout: default
 ---
 
 {% if page.images %}
-<ul class="rslides grid-50">
+<ul class="slider grid-50">
   {% for image in page.images %}
-  <li><img src="/img/{{image}}" alt=""/></li>
+  <li><img src="/img/{{image}}" alt="{{page.title}} - {{image}}"/></li>
   {% endfor %}
 </ul>
 {% endif %}
 <div class="{% if page.images %}grid-50{% else %}grid-100{% endif %}">
+  <h1>{{page.title}}</h1>
   {{content}}
   <p>Product Description</p>
   <p>Measures:</p>
   <p>{{page.measurements.width}} (width)</p>
   <p>{{page.measurements.depth}} (depth)</p>
   <p>{{page.measurements.height}} (height)</p>
+  <p>Price:</p>
+  <p>{{page.price}}</p>
   <p>Please note that this product is handmade and stain color and grain may vary.</p>
 </div>
