@@ -39,7 +39,7 @@ nav a {
   float: left;
   padding: 0px 10px;
 }
-nav li:hover > a, nav a:hover {
+nav li:hover {
   color: white;
   background-color: #1a1a1a;
 }
@@ -65,7 +65,7 @@ nav .dropdown {
   background-color: #5977b3;
   position: absolute;
   top: 100%;
-  left: 0;
+  left: -5px;
   z-index: 1000;
   display: none;
   float: left;
@@ -73,6 +73,9 @@ nav .dropdown {
   padding: 5px 0;
   margin: 0 0 0 5px;
   text-align: left;
+}
+nav .dropdown li {
+  width: 100%;
 }
 nav .dropdown li, nav .dropdown li a {
   padding: 0px;
