@@ -12,7 +12,8 @@ layout: default
 <div class="{% if page.images %}grid-50{% else %}grid-100{% endif %}">
   <h1>{{page.title}}</h1>
   {{content}}
-  <p>Product Description</p>
+  <p>Product Information:</p>
+  <p>{{page.description}}</p>
   <p>Measures:</p>
   <p>{{page.measurements.width}} (width)</p>
   <p>{{page.measurements.depth}} (depth)</p>
